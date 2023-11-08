@@ -16,7 +16,10 @@ extern "C" {
 
 typedef struct{
     int c,h,w;
+    // c: No. of Color channels: 1 for ayscale / 3 for RGB
+    // h,w is row and column of the pixel-location
     float *data;
+    
 } image;
 
 // A 2d point.

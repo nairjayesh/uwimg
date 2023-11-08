@@ -6,7 +6,7 @@ for row in range(im.h):
     for col in range(im.w):
         set_pixel(im, 0, row, col, 0)
 save_image(im, "dog_no_red")
-
+"""
 # 3. Grayscale image
 im = load_image("data/colorbar.png")
 graybar = rgb_to_grayscale(im)
@@ -30,5 +30,7 @@ shift_image(im, 1, .2)
 clamp_image(im)
 hsv_to_rgb(im)
 save_image(im, "dog_saturated")
+"""
+
 
 

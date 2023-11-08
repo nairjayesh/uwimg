@@ -47,6 +47,8 @@ You can also try running the example python code to generate some images:
 
 The most basic operation we want to do is change the pixels in an image. As we talked about in class, we represent an image as a 3 dimensional tensor. We have spatial information as well as multiple channels which combine together to form a color image:
 
+-- Note: Here Channel may mean just R-G-B format  
+
 ![RGB format](../../figs/rgb.png)
 
 The convention is that the coordinate system starts at the top left of the image, like so:
