@@ -6,11 +6,12 @@ for row in range(im.h):
     for col in range(im.w):
         set_pixel(im, 0, row, col, 0)
 save_image(im, "dog_no_red")
-"""
+
 # 3. Grayscale image
 im = load_image("data/colorbar.png")
 graybar = rgb_to_grayscale(im)
 save_image(graybar, "graybar")
+
 
 # 4. Shift Image
 im = load_image("data/dog.jpg")
@@ -23,6 +24,7 @@ save_image(im, "overflow")
 clamp_image(im)
 save_image(im, "doglight_fixed")
 
+"""
 # 6-7. Colorspace and saturation
 im = load_image("data/dog.jpg")
 rgb_to_hsv(im)
