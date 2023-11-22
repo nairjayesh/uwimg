@@ -16,8 +16,12 @@ Fill in `float nn_interpolate(image im, int c, float h, float w);` in `src/resiz
 
 It should perform nearest neighbor interpolation. Remember to use the closest `int`, not just type-cast because in C that will truncate towards zero.
 
+**
+Interpolation is trying resize the images, + / - the original size.
+
+
 ** my notes on nearest neightbor interpolation **
-- 
+ 
 
 ### 1.2 Nearest Neighbor Resizing ###
 
