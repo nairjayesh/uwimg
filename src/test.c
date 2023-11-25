@@ -70,6 +70,8 @@ int same_matrix(matrix m, matrix n)
     return 1;
 }
 
+// Test cases use the indexing format of WHC : nth Col, nth Row, nth Channel  
+
 int same_image(image a, image b, float eps)
 {
     int i;
@@ -78,9 +80,9 @@ int same_image(image a, image b, float eps)
         return 0;
     }
     for(i = 0; i < a.w*a.h*a.c; ++i){
-        int x = i % a.w;
-        int y = (i / a.w) % a.h;
-        int z = (i / (a.w * a.h));
+        int x = i % a.w; // W 
+        int y = (i / a.w) % a.h; // H 
+        int z = (i / (a.w * a.h)); // C
         float thresh = (fabs(b.data[i]) + fabs(a.data[i])) * eps / 2;
         if (thresh > eps) eps = thresh;
         if(!within_eps(a.data[i], b.data[i], eps)) 
