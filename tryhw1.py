@@ -6,3 +6,7 @@ save_image(a, "dog4x-nn")
 im = load_image("data/dogsmall.jpg")
 a = bilinear_resize(im, im.h*4, im.w*4)
 save_image(a, "dog4x-bl")
+
+im = load_image("data/dogsmall.jpg")
+a = bilinear_resize(im, im.h//4, im.w//4)
+save_image(a, "dog4th-bl")
