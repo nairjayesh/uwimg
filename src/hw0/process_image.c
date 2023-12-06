@@ -20,8 +20,6 @@ const float luma_R = 0.299;
 const float luma_G = 0.587;
 const float luma_B = 0.114; 
 
-
-
 float max_color(float a, float b, float c)
 {
     float max = a;
